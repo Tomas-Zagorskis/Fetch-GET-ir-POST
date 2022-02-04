@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add property</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="container header">
+      <h1>Add your property for sale</h1>
+      <p>Yes, you can sell where you live and get cash!</p>
+    </header>
+    <main class="container">
+      <h3>Add Property</h3>
+      <form action="" method="get">
+        <label for="img">img</label>
+        <input
+          type="url"
+          name="img"
+          id="img"
+          placeholder="https://google.com/logo.png"
+        />
+        <label for="price">Price, EUR</label>
+        <input type="number" name="price" id="price" placeholder="50000" />
+        <label for="decription">Description</label>
+        <textarea
+          name="decription"
+          id="decription"
+          cols="30"
+          rows="10"
+          placeholder="Anything you would like to say about your property."
+        ></textarea>
+        <select class="" name="cities">
+          <option value="" disabled selected>Choose your City</option>
+          <option value="1">Vilnius</option>
+          <option value="2">Kaunas</option>
+          <option value="3">Klaipėda</option>
+        </select>
+        <input type="submit" value="Add property" class="btn-primary" />
+      </form>
+    </main>
+  </body>
+</html>

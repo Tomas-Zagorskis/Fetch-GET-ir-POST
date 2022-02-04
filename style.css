@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container > * {
+  width: 70vw;
+  margin: auto;
+}
+.btn {
+  cursor: pointer;
+  width: fit-content;
+  background-color: white;
+  outline: none;
+  border: 1px rgba(0, 0, 0, 0.2) solid;
+}
+.btn-primary {
+  cursor: pointer;
+  background-color: #00cdae;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border: none;
+}
+.btn:hover,
+.btn:focus {
+  border: 2px #00cdae solid;
+}
+.flex-btn {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.flex-btn a {
+  margin-left: auto;
+}
+.header {
+  background-color: #00cdae;
+  color: white;
+  width: 100vw;
+  padding: 2rem 0;
+}
+.header h1 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+main h3 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+main form > * {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+main form > label {
+  font-weight: bold;
+}
+main form > select,
+main form > input[type="submit"] {
+  width: 30%;
+}
