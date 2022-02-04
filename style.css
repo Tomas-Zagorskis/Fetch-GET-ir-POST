@@ -54,6 +54,15 @@ body {
   color: white;
   width: 100vw;
   padding: 2rem 0;
+  height: 150px;
+}
+.header div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.header div p {
+  margin-top: 0;
 }
 .header h1 {
   font-size: 1.7rem;
