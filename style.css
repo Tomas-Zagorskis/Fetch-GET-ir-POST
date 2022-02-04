@@ -20,6 +20,7 @@ body {
   background-color: white;
   outline: none;
   border: 1px rgba(0, 0, 0, 0.2) solid;
+  transition: 50ms ease;
 }
 .btn-primary {
   cursor: pointer;
@@ -29,10 +30,16 @@ body {
   color: white;
   padding: 0.2rem 0.5rem;
   border: none;
+  transition: 50ms ease;
 }
 .btn:hover,
 .btn:focus {
   border: 2px #00cdae solid;
+  transform: scale(1.1);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: scale(1.1);
 }
 .flex-btn {
   display: flex;
@@ -52,9 +59,13 @@ body {
   font-size: 1.7rem;
   margin-bottom: 1rem;
 }
-main h3 {
+main h3,
+main > p {
   padding-top: 3rem;
   padding-bottom: 1rem;
+}
+.flex-btn {
+  margin-bottom: 2rem;
 }
 main form > * {
   display: block;
@@ -66,5 +77,36 @@ main form > label {
 }
 main form > select,
 main form > input[type="submit"] {
-  width: 30%;
+  width: 200px;
+}
+.housePicture {
+  aspect-ratio: 2 /1.5;
+  width: 250px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+.price {
+  margin-bottom: 0;
+}
+.city {
+  margin-top: 0;
+}
+.listedHouses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  padding: 0;
+  gap: 2rem;
+}
+.cardContent {
+  padding: 1rem;
+}
+.houseCard {
+  transition: 50ms linear;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.603);
+}
+.houseCard:focus,
+.houseCard:hover {
+  transform: scale(1.1);
 }
